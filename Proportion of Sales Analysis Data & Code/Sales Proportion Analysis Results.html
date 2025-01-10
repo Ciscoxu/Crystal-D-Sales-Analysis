@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Proportion Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2c3e50;
+            text-align: center;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #34495e;
+            margin-top: 40px;
+        }
+        p, li {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sales Porportion Analysis</h1>
+
+    <div class="section">
+        <h2>Why We Performed the Analysis</h2>
+        <p>The sponsor expressed strong interest in exploring the relationship between sales meetings, trade shows, and sales outcomes. 
+            Consequently, leveraging available data, we conducted an analysis to investigate potential correlations between the number 
+            of purchasers and the number of events attended by Crystal D from 2018 to 2021.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>How We Performed the Analysis</h2>
+        <p>We conducted a correlation analysis, linear regression analysis, and significance testing on two key variables: the proportion 
+            of sales and event frequency. To increase the accuracy of the analysis, we examined data over 48 months, covering the 4-year 
+            period. The dependent variable, the proportion of sales, was manually calculated by dividing the number of purchasing accounts 
+            in each month by the total number of accounts. The independent variable, event frequency, represents the number of events attended 
+            by Crystal D each month. 
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Results</h2>
+        <p>The sales proportion has been fluctuating across 2018-2021, with a significant drop in April 2020. Generally, the sales proportion rate 
+            was decreasing. The event frequency distribution indicates that Crystal D's event attendence mostly happened during summer and fall (chart 1). 
+        </p>
+        <p>From the correlation analysis, we found the correlation coefficient between sales proportion and event number is 0.20246001902272598. 
+            Correlation coefficient measures the strength and direction of the linear relationship between the number of events and the proportion 
+            of sales. A correlation coefficient of 0.2-0.3 shows a weak linear relationship between two variables.
+        </p>
+        <p>From the linear regression analysis, we found the regression coefficient is 8.76 × 10^-5 and the intercept is 0.0043. It indicates that for 
+            each additional event Crystal D attended, the proportion of sales increases by 8.76 × 10^-5. The intercept means that when there are no 
+            events, the proportion of sales is expected to be approximately 0.00434. 
+        </p>
+        <p>From the significance test, the p-value is 0.168, which is greater than the commonly used threshold of 0.05 for significance. This means that 
+            the test failed to reject the null hypothesis, suggesting there is no significant linear relationship between sales proportion and event numbers.
+        </p>
+        <!-- Placeholder for embedding charts -->
+        <p><strong>Chart 1:</strong></p>
+        <img src="Distribution of Sales Proportion & Event Number.png" alt="Chart 1 Description" style="width: 100%; max-width: 600px;">
+    </div>
+
+    <div class="section">
+        <h2>Insights</h2>
+        <p>
+            <ul>
+                <li>Sales proportion was decreasing during 2018-2021</li>
+                <li>There is no linear relationship between the number of events and the proportion of sales</li>
+                <li>However, we only collected data from attended events. Other events such as sales meetings or 
+                    sales over phone calls were not included
+                </li>
+            </ul>
+        </p>
+    </div>
+
+</body>
+</html>
