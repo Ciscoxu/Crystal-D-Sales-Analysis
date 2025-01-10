@@ -1,0 +1,161 @@
+/* Main container for Sales Summary */
+.sales-summary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Filter section */
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start; 
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 100%; 
+  max-width: 700px;
+}
+
+/* Filter dropdowns */
+.filter-section label {
+  margin-right: -17px; 
+  font-weight: bold;
+  display: flex;
+  align-items: center; 
+}
+
+.filter-section select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  height: 32px; 
+  margin-left: 5px; 
+}
+
+/* Search buttons */
+.button-section {
+  margin-left: 10px;
+}
+
+.button-section button {
+  margin-left: 5px;
+}
+
+/* Button section for Export to Excel */
+.export-button-section {
+  display: flex;
+  justify-content: flex-end; 
+  margin-bottom: 10px; 
+  width: 100%;
+}
+
+/* Export button styling */
+.export-button-section button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.export-button-section button:hover {
+  background-color: #0056b3;
+}
+
+/* Data Preview Section */
+.data-preview {
+  max-height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #ddd;
+  width: 100%;
+  background-color: #f9f9f9;
+  position: relative; 
+}
+
+.data-preview table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-preview th, .data-preview td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+.data-preview th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  position: sticky; 
+  top: 0;
+  z-index: 1; 
+}
+
+.data-preview tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.sum-row table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.sum-row th, .sum-row td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.sum-row th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.sum-row td {
+  background-color: #f2f2f2;
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px; 
+}
+
+/* Label for preview window */
+.preview-label h3 {
+  margin: 0;
+  padding-left: 0; 
+  white-space: nowrap;
+}
+
+/* Sum of Sales label */
+.sum-label {
+  text-align: left;
+  padding: 0px;
+  width: 100%;
+}
+
+/* Chart Export Button */
+.export-chart-button-section {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px; 
+}
+
+.export-chart-button-section button {
+  margin-left: 10px; 
+}

@@ -1,0 +1,121 @@
+/* Main container for Account Engagement */
+.account-engagement-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Filter section */
+  .filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 700px;
+  }
+
+  /* Second Previw Filter Section */
+.table-filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  /* Filter dropdowns */
+  
+  .filter-section label,
+  .table-filter-section label {
+    margin-right: -17px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-section select,
+  .table-filter-section select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 32px;
+    margin-left: 5px;
+  }
+  
+  /* Search button */
+  button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Data Preview Section */
+  .data-preview {
+    max-height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ddd;
+    width: 100%;
+    background-color: #f9f9f9;
+    position: relative;
+  }
+  
+  .data-preview table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .data-preview th, .data-preview td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+  }
+  
+  .data-preview th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .data-preview tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
